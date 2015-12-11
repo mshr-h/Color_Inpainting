@@ -20,7 +20,7 @@ struct img_rgb_t *TSV_inPaint_rgb(struct img_rgb_t *in_rgb,struct img_rgb_t *msk
     int it;
 
     lmda=0.02;
-    it=500;
+    it=3000;
     dlt_t=0.2;//should be <=0.2
 
     wt=in_rgb->wt;
@@ -33,6 +33,11 @@ struct img_rgb_t *TSV_inPaint_rgb(struct img_rgb_t *in_rgb,struct img_rgb_t *msk
 
     in=img_to_map_rgb(in_rgb);
     msk=img_to_map_rgb(msk_rgb);
+
+    Fxd=map_rgb_create(in->wt,in->ht,0.0);
+    Fyd=map_rgb_create(in->wt,in->ht,0.0);
+    Bx=map_rgb_create(in->wt,in->ht,0.0);
+    By=map_rgb_create(in->wt,in->ht,0.0);
 
     //compute gradients
     for(h=1;h<ht-1;h++){
@@ -57,11 +62,6 @@ struct img_rgb_t *TSV_inPaint_rgb(struct img_rgb_t *in_rgb,struct img_rgb_t *msk
     for(i=0;i<it;i++){
         printf("i=%d\n",i);
         fflush(stdout);
-
-        Fxd=map_rgb_create(in->wt,in->ht,0.0);
-        Fyd=map_rgb_create(in->wt,in->ht,0.0);
-        Bx=map_rgb_create(in->wt,in->ht,0.0);
-        By=map_rgb_create(in->wt,in->ht,0.0);
 
         //compute gradients
         for(h=1;h<Fxd->ht-1;h++){
@@ -117,11 +117,6 @@ struct img_rgb_t *TSV_inPaint_rgb(struct img_rgb_t *in_rgb,struct img_rgb_t *msk
             }
         }
 
-        map_rgb_destruct(Fxd);
-        map_rgb_destruct(Fyd);
-        map_rgb_destruct(Bx);
-        map_rgb_destruct(By);
-
         for(h=0;h<ht;h++){
             for(w=0;w<wt;w++){
                 in->r[h][w]=out->r[h][w];
@@ -137,6 +132,10 @@ struct img_rgb_t *TSV_inPaint_rgb(struct img_rgb_t *in_rgb,struct img_rgb_t *msk
     map_destruct(n2);
     map_rgb_destruct(in);
     map_rgb_destruct(out);
+    map_rgb_destruct(Fxd);
+    map_rgb_destruct(Fyd);
+    map_rgb_destruct(Bx);
+    map_rgb_destruct(By);
 
     return out_rgb;
 }
