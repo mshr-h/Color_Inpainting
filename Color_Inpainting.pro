@@ -19,9 +19,11 @@ SOURCES += main.cpp\
     img_rgb_destruct.c \
     Malloc2D_dbl.c \
     map_rgb_create.c \
-    map_rgb_destruct.c
+    map_rgb_destruct.c \
+    QImage_to_img_rgb.cpp
 
 HEADERS  += include/mainwindow.h \
-            include/image.h
+            include/image.h \
+    include/image_qt.h
 
 FORMS    += lib_ui/mainwindow.ui
