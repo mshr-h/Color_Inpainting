@@ -57,6 +57,10 @@ struct map_yuv_t
 };
 
 // function prototype
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 unsigned char **
 Malloc2D_uchr
 (
@@ -78,5 +82,9 @@ img_rgb_destruct
 (
     struct img_rgb_t *img
 );
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // IMAGE_H
