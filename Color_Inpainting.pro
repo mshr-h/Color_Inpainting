@@ -22,7 +22,9 @@ SOURCES += main.cpp\
     map_rgb_destruct.c \
     QImage_to_img_rgb.cpp \
     img_to_map_rgb.c \
-    map_to_img_rgb.c
+    map_to_img_rgb.c \
+    map_create.c \
+    map_destruct.c
 
 HEADERS  += include/mainwindow.h \
             include/image.h \

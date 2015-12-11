@@ -91,12 +91,26 @@ img_rgb_destruct
     struct img_rgb_t *img
 );
 
+struct map_t *
+map_create
+(
+    int wt,
+    int ht,
+    double init
+);
+
 struct map_rgb_t *
 map_rgb_create
 (
     int wt,
     int ht,
     double init
+);
+
+void
+map_destruct
+(
+    struct map_t *map
 );
 
 void
