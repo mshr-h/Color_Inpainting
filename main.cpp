@@ -1,6 +1,5 @@
 #include "include/image.h"
 #include "include/image_qt.h"
-#include "include/mainwindow.h"
 
 int main(int argc, char *argv[])
 {

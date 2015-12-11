@@ -13,7 +13,6 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-    mainwindow.cpp \
     Malloc2D_uchr.c \
     img_rgb_create.c \
     img_rgb_destruct.c \
@@ -28,8 +27,5 @@ SOURCES += main.cpp\
     map_destruct.c \
     img_rgb_to_QImage.cpp
 
-HEADERS  += include/mainwindow.h \
-            include/image.h \
+HEADERS  += include/image.h \
     include/image_qt.h
-
-FORMS    += lib_ui/mainwindow.ui
