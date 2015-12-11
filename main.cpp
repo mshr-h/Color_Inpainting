@@ -9,8 +9,18 @@ int main(int argc, char *argv[])
         //return 0;
     }
 
-    auto in_img_rgb = QImage_to_img_rgb(new QImage("Lvn_kid_gs.png"));
-    img_rgb_destruct(in_img_rgb);
+    auto in = QImage_to_img_rgb(new QImage(argv[1]));
+    auto msk = QImage_to_img_rgb(new QImage(argv[2]));
+
+    auto out = TSV_inPaint_rgb(in,msk);
+
+    auto outImg = img_rgb_to_QImage(out);
+
+    outImg.save(argv[3], "PNG");
+
+    img_rgb_destruct(in);
+    img_rgb_destruct(msk);
+    img_rgb_destruct(out);
 
     return 0;
 }
