@@ -18,6 +18,9 @@ Colorization is a technique to convert a grayscale image into a colored image.
 - λ=0.02
 - Δt=0.2
 
+## Requirement
+- Qt 5.3 or newer (probably works on older than 5.3 but not tested)
+
 ## Directory tree
 ```
 include/      header files
