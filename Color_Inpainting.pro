@@ -20,7 +20,9 @@ SOURCES += main.cpp\
     Malloc2D_dbl.c \
     map_rgb_create.c \
     map_rgb_destruct.c \
-    QImage_to_img_rgb.cpp
+    QImage_to_img_rgb.cpp \
+    img_to_map_rgb.c \
+    map_to_img_rgb.c
 
 HEADERS  += include/mainwindow.h \
             include/image.h \
