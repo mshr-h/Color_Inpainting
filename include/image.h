@@ -91,6 +91,20 @@ img_rgb_destruct
     struct img_rgb_t *img
 );
 
+struct map_rgb_t *
+map_rgb_create
+(
+    int wt,
+    int ht,
+    double init
+);
+
+void
+map_rgb_destruct
+(
+    struct map_rgb_t *map
+);
+
 #ifdef __cplusplus
 }
 #endif
