@@ -56,4 +56,13 @@ struct map_yuv_t
     double **v;
 };
 
+// function prototype
+unsigned char **
+Malloc2D_uchr
+(
+    int wt,
+    int ht,
+    unsigned char init
+);
+
 #endif // IMAGE_H

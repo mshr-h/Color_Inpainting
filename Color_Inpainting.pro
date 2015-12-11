@@ -13,7 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+    mainwindow.cpp \
+    Malloc2D_uchr.c
 
 HEADERS  += include/mainwindow.h \
             include/image.h
