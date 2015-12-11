@@ -5,10 +5,6 @@
 #include <QImage>
 #include <QColor>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 struct img_rgb_t *
 QImage_to_img_rgb
 (
@@ -22,8 +18,10 @@ TSV_inPaint_rgb
     struct img_rgb_t *msk_rgb
 );
 
-#ifdef __cplusplus
-}
-#endif
+QImage
+img_rgb_to_QImage
+(
+    struct img_rgb_t *img_rgb
+);
 
 #endif

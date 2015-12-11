@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     map_to_img_rgb.c \
     TSV_inPaint.cpp \
     map_create.c \
-    map_destruct.c
+    map_destruct.c \
+    img_rgb_to_QImage.cpp
 
 HEADERS  += include/mainwindow.h \
             include/image.h \
