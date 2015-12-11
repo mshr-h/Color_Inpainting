@@ -16,7 +16,8 @@ SOURCES += main.cpp\
     mainwindow.cpp \
     Malloc2D_uchr.c \
     img_rgb_create.c \
-    img_rgb_destruct.c
+    img_rgb_destruct.c \
+    Malloc2D_dbl.c
 
 HEADERS  += include/mainwindow.h \
             include/image.h
