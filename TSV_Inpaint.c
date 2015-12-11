@@ -1,7 +1,6 @@
 #include "include/image.h"
-#include "include/image_qt.h"
 
-struct img_rgb_t *TSV_inPaint_rgb(struct img_rgb_t *in_rgb,struct img_rgb_t *msk_rgb)
+struct img_rgb_t *TSV_Inpaint(struct img_rgb_t *in_rgb,struct img_rgb_t *msk_rgb)
 {
     int w,h,i;
     int wt,ht;

@@ -131,6 +131,13 @@ map_to_img_rgb
     struct map_rgb_t *map
 );
 
+struct img_rgb_t *
+TSV_Inpaint
+(
+    struct img_rgb_t *in_rgb,
+    struct img_rgb_t *msk_rgb
+);
+
 #ifdef __cplusplus
 }
 #endif

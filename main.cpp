@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     auto in = QImage_to_img_rgb(new QImage(argv[1]));
     auto msk = QImage_to_img_rgb(new QImage(argv[2]));
 
-    auto out = TSV_inPaint_rgb(in,msk);
+    auto out = TSV_Inpaint(in,msk);
 
     auto outImg = img_rgb_to_QImage(out);
 
