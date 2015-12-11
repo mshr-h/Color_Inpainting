@@ -1,11 +1,11 @@
-#include "include/mainwindow.h"
-#include <QApplication>
+#include "include/image.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    if(argc < 4) {
+        printf("./Color_Inpainting grayscale.png mask.png out.png\n");
+        return 0;
+    }
 
-    return a.exec();
+    return 0;
 }
