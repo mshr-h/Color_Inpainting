@@ -12,8 +12,8 @@ Colorization is a technique to convert a grayscale image into a colored image.
 | original | grayscale | mask | output |
 | :------: | :-------: | :--: | :----: |
 | ![](inImg_db/Lvn_kid_original.png) | ![](inImg_db/Lvn_kid_gs.png) | ![](inImg_db/Lvn_kid_scrible_1.png) | ![](outImg_db/Lvn_kid_scrible_1_out.png) |
-| ![](inImg_db/Lvn_kid_original.bmp) | ![](inImg_db/Lvn_kid_gs.png) | ![](inImg_db/Lvn_kid_scrible_2.png) | ![](outImg_db/Lvn_kid_scrible_2_out.png) |
-| ![](inImg_db/Lvn_kid_original.bmp) | ![](inImg_db/Lvn_kid_gs.png) | ![](inImg_db/Lvn_kid_scrible_3.png) | ![](outImg_db/Lvn_kid_scrible_3_out.png) |
+| ![](inImg_db/Lvn_kid_original.png) | ![](inImg_db/Lvn_kid_gs.png) | ![](inImg_db/Lvn_kid_scrible_2.png) | ![](outImg_db/Lvn_kid_scrible_2_out.png) |
+| ![](inImg_db/Lvn_kid_original.png) | ![](inImg_db/Lvn_kid_gs.png) | ![](inImg_db/Lvn_kid_scrible_3.png) | ![](outImg_db/Lvn_kid_scrible_3_out.png) |
 - 3000 iteration
 - λ=0.02
 - Δt=0.2
