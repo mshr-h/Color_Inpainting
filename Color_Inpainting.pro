@@ -23,6 +23,7 @@ SOURCES += main.cpp\
     QImage_to_img_rgb.cpp \
     img_to_map_rgb.c \
     map_to_img_rgb.c \
+    TSV_inPaint.cpp \
     map_create.c \
     map_destruct.c
 
