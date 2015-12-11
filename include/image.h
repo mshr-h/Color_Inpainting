@@ -65,4 +65,18 @@ Malloc2D_uchr
     unsigned char init
 );
 
+struct img_rgb_t *
+img_rgb_create
+(
+    int wt,
+    int ht,
+    unsigned char init
+);
+
+void
+img_rgb_destruct
+(
+    struct img_rgb_t *img
+);
+
 #endif // IMAGE_H
