@@ -1,4 +1,4 @@
-# Colorization using Inpainting
+# Colorization using Inpainting ![travis-ci](https://travis-ci.org/mshr-h/Color_Inpainting.svg?branch=master)
 ## Description
 This is an implementation of Color Inpainting using C/C++ on Qt platform.
 The algorithm is written in C.
