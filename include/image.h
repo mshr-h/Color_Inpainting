@@ -135,7 +135,10 @@ struct img_rgb_t *
 TSV_Inpaint
 (
     struct img_rgb_t *in_rgb,
-    struct img_rgb_t *msk_rgb
+    struct img_rgb_t *msk_rgb,
+    int it,
+    double dlt_t,
+    double lmda
 );
 
 #ifdef __cplusplus

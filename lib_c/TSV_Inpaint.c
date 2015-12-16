@@ -1,6 +1,7 @@
 #include "include/image.h"
 
-struct img_rgb_t *TSV_Inpaint(struct img_rgb_t *in_rgb,struct img_rgb_t *msk_rgb)
+struct img_rgb_t *TSV_Inpaint(struct img_rgb_t *in_rgb,struct img_rgb_t *msk_rgb,
+                              int it,double dlt_t,double lmda)
 {
     int w,h,i;
     int wt,ht;
@@ -14,17 +15,8 @@ struct img_rgb_t *TSV_Inpaint(struct img_rgb_t *in_rgb,struct img_rgb_t *msk_rgb
     struct map_rgb_t *Bx,*By;
     struct img_rgb_t *out_rgb;
 
-    double dlt_t;
-    double lmda;
-    int it;
-
-    lmda=0.02;
-    it=3000;
-    dlt_t=0.2;//should be <=0.2
-
     wt=in_rgb->wt;
     ht=in_rgb->ht;
-
 
     n1=map_create(wt,ht,0.0);
     n2=map_create(wt,ht,0.0);
