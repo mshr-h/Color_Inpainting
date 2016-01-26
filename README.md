@@ -1,5 +1,7 @@
 # Colorization using Inpainting [![travis-ci](https://travis-ci.org/mshr-h/Color_Inpainting.svg?branch=master)](https://travis-ci.org/mshr-h/Color_Inpainting)
 
+[![license](https://img.shields.io/badge/license-MIT-orange.svg)](https://github.com/mshr-h/Color_Inpainting/blob/master/LICENSE)
+
 ## Description
 
 This is an implementation of Color Inpainting using C/C++ on Qt platform.
