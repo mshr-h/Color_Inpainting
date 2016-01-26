@@ -40,4 +40,5 @@ outImg_db/    sample output images
 
 ## Reference
 
-[Marcelo Bertalmio, Guillermo Sapiro, Vincent Caselles, and Coloma Ballester. 2000. Image inpainting. In Proceedings of the 27th annual conference on Computer graphics and interactive techniques (SIGGRAPH '00). ACM Press/Addison-Wesley Publishing Co., New York, NY, USA, 417-424. DOI=http://dx.doi.org/10.1145/344779.344972](http://www.dtic.upf.edu/~mbertalmio/bertalmi.pdf)
+- [Marcelo Bertalmio, Guillermo Sapiro, Vincent Caselles, and Coloma Ballester. 2000. Image inpainting. In Proceedings of the 27th annual conference on Computer graphics and interactive techniques (SIGGRAPH '00). ACM Press/Addison-Wesley Publishing Co., New York, NY, USA, 417-424. DOI=http://dx.doi.org/10.1145/344779.344972](http://www.dtic.upf.edu/~mbertalmio/bertalmi.pdf)
+- [Guillermo Sapiro, INPAINTING THE COLORS](http://www.ima.umn.edu/preprints/pp2004/1979.pdf)
