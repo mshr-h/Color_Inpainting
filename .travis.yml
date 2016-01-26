@@ -1,11 +1,9 @@
-sudo: false
 language: cpp
 compiler: gcc
-addons:
-  apt_packages:
-  - build-essential
-  - qt5-qmake
-  - qtbase5-dev
+before_install:
+  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq build-essential qt5-qmake qtbase5-dev
 script:
   - qmake -qt=qt5
   - make
