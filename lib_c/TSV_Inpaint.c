@@ -121,6 +121,7 @@ struct img_rgb_t *TSV_Inpaint(struct img_rgb_t *in_rgb,struct img_rgb_t *msk_rgb
     out_rgb=map_to_img_rgb(out);
     map_destruct(n1);
     map_destruct(n2);
+    map_rgb_destruct(msk);
     map_rgb_destruct(in);
     map_rgb_destruct(out);
     map_rgb_destruct(Fxd);
