@@ -1,5 +1,7 @@
-# Colorization using Inpainting [![travis-ci](https://travis-ci.org/mshr-h/Color_Inpainting.svg?branch=master)](https://travis-ci.org/mshr-h/Color_Inpainting)
+# Colorization using Inpainting
 
+[![travis-ci](https://travis-ci.org/mshr-h/Color_Inpainting.svg?branch=master)](https://travis-ci.org/mshr-h/Color_Inpainting)
+[![coverity-scan](https://scan.coverity.com/projects/7761/badge.svg)](https://scan.coverity.com/projects/mshr-h-color_inpainting)
 [![license](https://img.shields.io/badge/license-MIT-orange.svg)](https://github.com/mshr-h/Color_Inpainting/blob/master/LICENSE)
 
 ## Description
